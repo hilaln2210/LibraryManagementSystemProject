@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.library.management</groupId>
+  <artifactId>LibraryManagementSystemPartC</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <dependencies>
+    <!-- Dependency for Jackson -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.12.3</version>
+    </dependency>
+
+    <!-- Dependency for JUnit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Dependency on Part A -->
+    <dependency>
+      <groupId>com.library.management</groupId>
+      <artifactId>LibraryManagementSystemPartA</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/libs/LibraryManagementSystemPartA-1.0-SNAPSHOT.jar</systemPath>
+    </dependency>
+
+    <!-- Dependency on Part B -->
+    <dependency>
+      <groupId>com.library.management</groupId>
+      <artifactId>LibraryManagementSystemPartB</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/libs/LibraryManagementSystemPartB-1.0-SNAPSHOT.jar</systemPath>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.library.management.server.ServerDriver</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>

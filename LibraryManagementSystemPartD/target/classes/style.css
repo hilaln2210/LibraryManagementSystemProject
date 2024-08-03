@@ -1,0 +1,45 @@
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-image: url("image.jpeg");
+    -fx-background-size: cover;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 10 40 10 40; /* Padding for main menu buttons */
+    -fx-font-size: 18px; /* Font size for main menu buttons */
+    -fx-background-radius: 10; /* Soften the corners */
+    -fx-border-radius: 10; /* Soften the border corners */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+.welcome-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-color: #e74c3c; /* Red background */
+    -fx-padding: 10px; /* Padding for the label */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 4, 0, 2, 2);
+}
+
+.librarian-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 5 10 5 10; /* Smaller padding for librarian buttons */
+    -fx-font-size: 12px; /* Smaller font size for librarian buttons */
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.librarian-button:hover {
+    -fx-background-color: #2980b9;
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47956ab2-a866-485f-b5a6-a1b49a077ac5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartA/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartA/src/main/java/com/library/algorithms/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library/management/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/library/management/MainClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartC/src/main/java/com/library/management/server/request/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartC/src/main/java/com/library/management/server/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/libs/LibraryManagementSystemPartA-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/libs/LibraryManagementSystemPartB-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/libs/LibraryManagementSystemPartC-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/java/com/library/management/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/java/com/library/management/ui/AddBookUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/java/com/library/management/ui/CustomerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/java/com/library/management/ui/LibrarianUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/java/com/library/management/ui/MainUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/java/com/library/management/ui/UpdateBookUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/resources/image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/main/resources/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/src/test/java/com/library/management/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/target/classes/image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/target/classes/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LibraryManagementSystemPartD/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documents/Antenna_Scan/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/src/lib/library-booking-system.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LibraryManagementApp/src/main/java/com/library/management/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../git" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/.idea/artifacts/library_booking_system_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/.idea/artifacts/library_booking_system_jar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/out/artifacts/library_booking_system_jar/library-booking-system.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/out/artifacts/library_booking_system_jar2/library-booking-system.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/algorithm/FCFSAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/algorithm/IAlgoBooking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/algorithm/PriorityBookingAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/app/LibraryBookingApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/controller/BookingManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/main/java/com/library/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/src/test/java/com/library/controller/BookingManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/algorithm/FCFSAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/algorithm/IAlgoBooking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/algorithm/PriorityBookingAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/app/LibraryBookingApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/controller/BookingManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/classes/com/library/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/target/test-classes/com/library/controller/BookingManagerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../library-booking-system/פרויקט -שרת לקוח ויחידת אלגוריתם- חלק ב.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../master" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2i7PGNV465HsSKir8VP0kc7XeiR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/LibraryManagementSystemPartC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\LibraryManagementSystemPartB\libs" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47956ab2-a866-485f-b5a6-a1b49a077ac5" name="Changes" comment="" />
+      <created>1718838545803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718838545803</updated>
+      <workItem from="1718838546860" duration="1100000" />
+      <workItem from="1718839652626" duration="6842000" />
+      <workItem from="1720604020708" duration="599000" />
+      <workItem from="1720790173753" duration="775000" />
+      <workItem from="1720796612467" duration="630000" />
+      <workItem from="1721398532259" duration="14317000" />
+      <workItem from="1722686492041" duration="2018000" />
+      <workItem from="1722695538955" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
