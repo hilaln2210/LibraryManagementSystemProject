@@ -1,5 +1,7 @@
 # Library Management System
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A complete academic library management project built with Java and Maven, developed progressively across 4 parts (A through D). Each part builds on the previous, introducing new capabilities from core data structures up to a full JavaFX graphical interface.
 
 ## Project Overview
