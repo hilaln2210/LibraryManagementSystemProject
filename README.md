@@ -1,79 +1,113 @@
 # Library Management System
 
-A complete academic library management project built with Java and Maven, developed progressively across 4 parts (A–D).
+A complete academic library management project built with Java and Maven, developed progressively across 4 parts (A through D). Each part builds on the previous, introducing new capabilities from core data structures up to a full JavaFX graphical interface.
 
-## Description
+## Project Overview
 
-This system manages books, customers, and library operations through a multi-layered architecture. Each part builds on the previous, introducing new capabilities from core data structures up to a full JavaFX graphical interface.
+The system manages books, customers, and library operations through a multi-layered architecture. Key concerns — caching, file persistence, client-server communication, and GUI — are introduced incrementally across the four parts.
+
+**Authors:** Hila Mendelson & Sahar Halili (academic project)
 
 ## Parts Overview
 
 ### Part A — Core Data Structures & Caching Algorithms
-- Implements fundamental data structures used throughout the project
-- Introduces `IAlgoCache` interface with two implementations: `LRUCache` (Least Recently Used) and `RandomCache`
-- Foundation for all subsequent parts
 
-### Part B — File Persistence & Algorithms
-- Adds `Book` model and `IBookDao` interface for data access
-- `BookDaoFileImpl` — file-based persistence, reads/writes book records to `books.txt`
-- `BookService` — business logic layer for book management (add, remove, search, sort)
-- Sorting and search algorithms over book collections
-- JUnit tests: `TestBookService`, `MainClassTest`
+Located in `LibraryManagementSystemPartA/`
+
+- Defines the `IAlgoCache<K, V>` interface with `get`, `put`, `remove`, and `size` operations
+- `LRUCache<K, V>` — Least Recently Used eviction implemented with `LinkedHashMap` (access-order mode)
+- `RandomCache<K, V>` — cache with random eviction policy
+- JUnit tests: `AlgoCacheTest`, `AppTest`
+- This part is the algorithmic foundation used by all later parts
+
+### Part B — File Persistence & Book Management
+
+Located in `LibraryManagementSystemPartB/`
+
+- `Book` model — id, title, author, year
+- `IBookDao` interface — standard DAO contract (add, get, getAll, update, delete)
+- `BookDaoFileImpl` — file-based persistence; reads and writes book records to `books.txt`
+- `BookService` — business logic layer wrapping the DAO
+- `MainClass` — interactive entry point for book operations
+- JUnit tests: `TestBookService`, `MainClassTest`, `AppTest`
+- Depends on Part A JAR (included in `libs/`)
 
 ### Part C — Client-Server Architecture
-- Introduces a TCP socket server (`Server`, `ServerDriver`)
-- `HandleRequest` — dispatches incoming requests to the appropriate controller
-- `BookController` — handles book-related requests
-- `Request` / `Response` model classes for structured communication
-- JUnit tests covering server, controller, and request handling
 
-### Part D — JavaFX GUI & Advanced Features
-- Full graphical user interface using JavaFX
-- `MainUI` — entry point and navigation
-- `LibrarianUI` — librarian management view (add, update, remove books)
-- `CustomerUI` — customer browsing and borrowing view
-- `AddBookUI` / `UpdateBookUI` — dedicated book management dialogs
-- CSS styling (`style.css`) and image assets
-- `customers.txt` — persistent customer data storage
+Located in `LibraryManagementSystemPartC/`
+
+- `Server` — TCP socket server accepting client connections on a configured port; spawns a handler thread per connection
+- `ServerDriver` — bootstraps and starts the server
+- `HandleRequest` — dispatches incoming socket requests to the appropriate controller
+- `BookController` — handles book-related API requests
+- `Request` / `Response` — structured message classes for client-server communication
+- JUnit tests: `ServerTest`, `ServerDriverTest`, `HandleRequestTest`, `BookControllerTest`, `AppTest`
+- Depends on Parts A and B JARs (included in `libs/`)
+
+### Part D — JavaFX GUI & Full Integration
+
+Located in `LibraryManagementSystemPartD/`
+
+- Full graphical user interface built with JavaFX
+- `MainUI` — application entry point and role-selection screen (Customer / Librarian)
+- `LibrarianUI` — librarian view: browse, add, update, and remove books
+- `CustomerUI` — customer view: browse available books
+- `AddBookUI` / `UpdateBookUI` — modal dialogs for book management
+- CSS styling (`src/main/resources/style.css`) and image assets
+- `books.txt` and `customers.txt` for persistent data storage
+- Depends on Parts A, B, and C JARs (included in `libs/`)
 
 ## Tech Stack
 
-- **Java** 17+
-- **Maven** — build and dependency management per part
-- **JUnit** — unit tests across all parts
-- **JavaFX** — graphical user interface (Part D)
-- **File I/O** — text-file persistence for books and customers
-- **TCP Sockets** — client-server communication (Part C)
+| Component | Technology |
+|---|---|
+| Language | Java 17+ |
+| Build | Maven (one `pom.xml` per part) |
+| Unit testing | JUnit |
+| GUI (Part D) | JavaFX |
+| Persistence | Text file I/O (`books.txt`, `customers.txt`) |
+| Networking (Part C) | Java TCP Sockets (`ServerSocket`, `Socket`) |
 
 ## Build Instructions
 
-Each part is an independent Maven project. Build them in order (A → B → C → D) since later parts depend on JARs from earlier ones (included in `libs/`).
+Each part is an independent Maven project. Build in order (A → B → C → D) because later parts depend on JARs from earlier ones (pre-built JARs are already included in each part's `libs/` directory).
 
 ```bash
-# Part A
+# Part A — cache algorithms
 cd LibraryManagementSystemPartA && mvn clean install
 
-# Part B
-cd LibraryManagementSystemPartB && mvn clean install
+# Part B — book CRUD + file persistence
+cd ../LibraryManagementSystemPartB && mvn clean install
 
-# Part C
-cd LibraryManagementSystemPartC && mvn clean install
+# Part C — TCP server
+cd ../LibraryManagementSystemPartC && mvn clean install
 
-# Part D
-cd LibraryManagementSystemPartD && mvn clean install
+# Part D — JavaFX GUI
+cd ../LibraryManagementSystemPartD && mvn clean install
 ```
 
-To run tests for any part:
+### Run tests for any part
+
 ```bash
 cd LibraryManagementSystemPartX && mvn test
 ```
 
-## Project Documents
+### Run Part D (JavaFX application)
 
-- `LibraryManagementSystemPresentation_Final.pdf` — final presentation slides
-- `LibraryManagementSystem - detailes.txt` — project details and authors
-- `סרטון הסבר.mp4` — explanation and demo video
+```bash
+cd LibraryManagementSystemPartD && mvn javafx:run
+```
+
+> Requires JavaFX to be on the module path. If using JDK 17+ without bundled JavaFX, add the JavaFX Maven plugin to `pom.xml` or provide `--module-path` flags manually.
+
+## Project Files
+
+| File | Description |
+|---|---|
+| `LibraryManagementSystemPresentation_Final.pdf` | Final presentation slides |
+| `LibraryManagementSystem - detailes.txt` | Project details and authors |
+| `סרטון הסבר.mp4` | Demo and explanation video |
 
 ## Academic Context
 
-Submitted by **Hila Mendelson** and **Sahar Halili** as a collaborative academic project.
+Submitted by **Hila Mendelson** and **Sahar Halili** as a collaborative academic project demonstrating progressive software engineering: data structures, DAO patterns, TCP networking, and GUI development.
